@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Token of Gratitude - an Ethereum fundraiser experiment</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- Project CSS-->
+    <link href="css/bftp.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/ga.js"></script>
+
+</head>
+
+<body id="page-top">
+    <div id="mm-warn" class="alert alert-info" role="alert">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>Looks like you don't have Metamask enabled.</strong> The contract UI won't work. <a href="https://metamask.io" target="_blank">Get it here.</a>
+    </div>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Blockchain for the people</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="https://metamask.io/" target="_blank">Get Metamask <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </li>
+                    <!--<li>-->
+                        <!--<a class="page-scroll" href="#hack">Hackathon <i class="fa fa-external-link" aria-hidden="true"></i></a>-->
+                    <!--</li>-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"> Services <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu UI-menuDD">-->
+                            <!--&lt;!&ndash;<li><a href="#">TestRPC</a></li>&ndash;&gt;-->
+                            <!--<li id="service1" class="active"><a href="./timestamp/index.html">Timestamping</a></li>-->
+                            <!--<li id="service2"><a href="./voting/index.html">Voting</a></li>-->
+                            <!--<li id="service3"><a href="./token/index.html">Tokenizing</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Your node<span class="caret"></span></a>
+                        <ul class="dropdown-menu UI-menuDD">
+                            <!--<li><a href="#">TestRPC</a></li>-->
+                            <li id="option_mmrpc"><a href="#">Metamask</a></li>
+                            <li id="option_lhrpc"><a href="#">Local RPC</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section class="bg-custom" id="ibo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1> Token of Gratitude - DEMO on testnet!</h1>
+                    <h1><small>Community fundraiser powered by Ethereum - Don't send your mainnet ether just yet!</small></h1>
+                    <!--<hr>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 text-center"></div>
+                <div class="col-lg-4 text-center">
+                    <!--<h1> Ethereum  </h1>-->
+
+                    <div class="fundraiser">
+                        <div class="step">
+                            <h3> Fundraiser address </h3>
+
+                            <img class="qr" src="images/kovanQR.gif">
+                            <p> kovan TESTNET address </p>
+                        </div>
+
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="step">
+                        <h3> Contract details </h3>
+                        <div>
+                            <span id="esLine">Participate simply by sending Kovan testnet Ether to: </span>
+                            <span><a id="esLink" href="https://kovan.etherscan.io/address/0x25989d6fb2F9467dA411B12f153adBe958D57b2A" target="_blank"> 0x25989d6fb2F9467dA411B12f153adBe958D57b2A </a></span>
+                        </div>
+
+                        <table class="table" id="infoTab">
+                            <tr>
+                                <td>Current token price: </td>
+                                <td> <span id="cp">0.1</span> ETH </td>
+                            </tr>
+                            <tr>
+                                <td>Tokens left:  </td>
+                                <td> <span id="tl">500</span> ToG </td>
+                            </tr>
+                            <tr>
+                                <td>Raised: </td>
+                                <td> <span  id="tr">0</span> USD </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-2 text-center"></div>
+            </div>
+            <div id="tog-buy" class="row">
+                <div class="col-lg-12 text-center">
+                    <h3> Get the Token of Gratitude </h3>
+                    <input id="tog-amo" class="UI-input" type="text" placeholder="How many?">
+                    <button id="tog-get" class="btn btn-default btn-primary"> Get ToG </button>
+                </div>
+            </div>
+            <div id="tog-donate" class="row">
+                <div class="col-lg-12 text-center">
+                    <h3> Feel like to donate? </h3>
+                    <input id="don-val" class="UI-input" type="text" placeholder="How much?">
+                    <button id="don-do" class="btn btn-default btn-primary"> Donate </button>
+                </div>
+            </div>
+            <div id="tog-step1" class="row">
+                <div class="col-lg-12 text-center">
+                    <h2> Fundraiser countdown</h2>
+                    <div>
+                        <div class="clock" id="days"> <span> - </span> <p>days</p></div>
+                        <div class="clock" id="hours"> <span> - </span>  <p>hours</p> </div>
+                        <!--<div class="colon">:</div>-->
+                        <div class="clock" id="minutes"> <span> - </span>  <p>minutes</p> </div>
+                        <!--<div class="colon">:</div>-->
+                        <div class="clock" id="seconds"> <span> - </span>  <p>seconds</p> </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="tog-step2">
+                <div>
+                    <div class="col-lg-12 text-center">
+                        <h2> Fundraiser is over! </h2>
+                        <p> Redeem your token! </p>
+
+                        <div id="redeem-input">
+                            <input class="UI-input" type="text" placeholder="Your contact details">
+                            <button class="btn btn-default btn-primary"> Encrypt </button>
+                        </div>
+                        <div id="redeem-submit">
+                            <input class="UI-input" type="text" placeholder="some data" disabled>
+                            <button id="rewind" class="btn-special"> <i class="fa fa-repeat" aria-hidden="true"></i> </button>
+                            <button id="tog-red" class="btn btn-default btn-primary"> Redeem</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-lg-12 text-center">
+                        <div id="gt-open">
+                            <p id="gt" class="glow-on"> Golden <i class="fa fa-ticket" aria-hidden="true"></i> Ticket </p>
+                        </div>
+                        <div id="gt-redeem">
+                            <div id="gt-redeem-input">
+                                <input class="UI-input" type="text" placeholder="Your contact details">
+                                <button class="btn btn-default btn-primary"> Encrypt </button>
+                            </div>
+                            <div id="gt-redeem-submit">
+                                <input class="UI-input" type="text" placeholder="encrypted data" disabled>
+                                <button id="gt-rewind" class="btn-special"> <i class="fa fa-repeat" aria-hidden="true"></i> </button>
+                                <button id="gt-red" class="btn btn-default btn-primary"> Redeem</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explanatory section -->
+    <section class="" id="ibo-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 text-center">
+                    <h1> What is this thing?! </h1>
+                    <br>
+                    <p> This is a community fundraiser to support a blockchain developer hub in <a href="https://www.google.cz/search?q=Prague" target="_blank">Prague</a>. </p>
+                    <p> Also, it's a chance to get a token with real life (offline) benefits! </p>
+
+                    <h2> What will you get for your contribution? </h2>
+                    <p> A Token of Gratitude (ToG)! A <b>freely tradable</b> ERC20 token expressing my <b>appreciation</b>
+                        of your contribution to our community.</p>
+                    <p> If you decide to redeem your token I'll invite you for a drink once you show up in Prague.
+                        And that's not all! The <b>value of ToG grows</b> as the streatch goals are reached. </p>
+                    <h3> <b> 1 ToG </b> </h3>
+                    <span> means all of the following: </span>
+                    <h4> <b>1 drink invitation</b> </h4>
+                    <span> hopefully on your visit of Prague or even elsewhere </span>
+                    <h4> <b>free hub entry</b> </h4>
+                    <span> for 1 year (if the 1st goal is reached) </span>
+                    <h4> <b>event entry discount</b> </h4>
+                    <span> for the 2018 conference (if 2nd goal is reached) </span>
+                    <h4> <b>great feeling</b>  </h4>
+                    <span> forever after (gets better with every wei raised!) as what's not used goes to chairty </span>
+                    <h4> Only 500 ToG will be given away!</h4>
+                    <small> + one speacial Golden ticket <i class="fa fa-ticket" aria-hidden="true"></i> for a random supporter (<a href="https://medium.com/@josefj42/token-of-gratitude-fundraiser-on-ethereum-live-on-kovan-testnet-d8583eaef34f" target="_blank">see Medium</a>)</small>
+
+                    <h2> How much money is needed? </h2>
+                    <p> The fundraiser doesn't have a minimal limit and each ToG holder will have a chance to get a drink.
+                        If it's raised less or more then it's needed for the cause, the leftover ether will be automatically send to charity
+                        (<a href="https://github.com/JosefJ/TokenOfGratitude" target="_blank">see the smart contract</a>).
+                        The goals are following:
+
+                    <h4> <b>1. goal: 10 000 USD</b> </h4>
+                    <p> To start and run a blockchain developer hub in Prague for one year at least. </p>
+
+                    <h4> <b>2. goal: 25 000 USD</b> </h4>
+                    <p> To organize an academic conference for blockchain related papers in 2018 </p>
+
+                    <h4> <b>Charity goal: 25 000+ USD</b> </h4>
+                    <p> Everything above 25k gets automatically send directly to etherum address of Doctors without borders / Médecins Sans Frontières! </p>
+
+                    <h2> What's the token price? </h2>
+                    <p> ToG price is based on the amount of tokens left. Each contribution is checked for how many tokens can a contributor get and they are assigned accordingly. </p>
+                    <table id="priceTab" class="table">
+                        <tr>
+                            <th> Amount of tokens </th>
+                            <th> ETH price </th>
+                        </tr>
+                        <tr>
+                            <td> first 100 ToG </td>
+                            <td> 0.1 </td>
+                        </tr>
+                        <tr>
+                            <td> next 100 ToG </td>
+                            <td> 0.2 </td>
+                        </tr>
+                        <tr>
+                            <td> next 100 ToG </td>
+                            <td> 0.3 </td>
+                        </tr>
+                        <tr>
+                            <td> next 100 ToG </td>
+                            <td> 0.4 </td>
+                        </tr>
+                        <tr>
+                            <td> last 100 ToG </td>
+                            <td> 0.5 </td>
+                        </tr>
+                    </table>
+                    <p> Contributions below the current ToG price or above the total amount of ToG are considered to be direct donations to the contract goal.</p>
+
+                    <h2> How do you get your reward? </h2>
+                    <p> As soon as the fundraiser will be over, interface for with an encryptet message field will be available
+                        on the top of this page. Or you can just follow instructions on <a href="https://github.com/JosefJ/TokenOfGratitude" target="_blank">Github</a>.</p>
+
+                    <h2> Where to next? </h2>
+                    <h3> Give a feedback! </h3>
+                    <p> I'll be glad for any comments on <a href="">Medium </a> or <a href="https://www.reddit.com/r/ethereum/comments/6ze77q/token_of_gratitude_nonprofit_fundraiser_live_on/?utm_content=comments&utm_medium=new&utm_source=reddit&utm_name=ethereum" target="_blank">Reddit</a>.</p>
+                    <p> Also, feel free to hit me on <a href="https://twitter.com/JosefJelacic" target="_blank">Twitter</a>.</p>
+
+                    <h3> Don't forget to checkout the code! </h3>
+                    <p> Built on top of Open Zeppelin contracts and uses Oraclize as a data feed and random number generator. It's all public on
+                        <a href="https://github.com/JosefJ/TokenOfGratitude" target="_blank">Github</a></p>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--<footer>-->
+        <!--<div class="footer">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-lg-12">-->
+                            <!--<div class="muted pull-right">-->
+                                <!--<a href="#">About</a> |-->
+                                <!--<a href="#">Donate</a> |-->
+                                <!--<a href="#">Terms of Service</a> |-->
+                                <!--<a href="#">Privacy</a>-->
+                            <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</footer>-->
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+    <!--Web3 -->
+    <!--<script src="js/web3.min.js"></script>-->
+
+    <!-- Distribution JavaScript-->
+    <script src="js/app.js"></script>
+
+    <!-- Project JavaScript -->
+    <script src="js/jsencrypt.min.js"></script>
+    <script src="js/bftp.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

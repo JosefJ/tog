@@ -1,0 +1,142 @@
+#ibo {
+    background-image: url('../images/bg2.jpg');
+    min-height: 100%;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.qr {
+    margin: 15px 0px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 22px;
+    border: 1px solid white;
+}
+
+#goals li{
+    text-align: left;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+#infoTab {
+    margin-top: 60px;
+}
+
+#infoTab th {
+    text-align: center;
+}
+
+#priceTab tr > th {
+    text-align: center;
+}
+
+#infoTab td:nth-child(1){
+    text-align: left;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#infoTab td:nth-child(2){
+    text-align: right;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+#infoTab tr:nth-child(1) > td{
+    border-top: none;
+}
+
+#infoTab tr:nth-child(3){
+    border-top: 2px solid white;
+}
+
+.clock {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border: 2px solid white;
+    border-radius: 22px;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.clock span {
+    font-size: 36px;
+}
+
+#esLine {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#expired {
+    font-size: 60px;
+}
+.row a {
+    color: #dba717;
+}
+
+.row a:hover {
+    color: #dba717 !important;
+}
+
+.navbar-default.affix .navbar-header .navbar-brand {
+    color: #dba717;
+}
+
+#gt{
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.glow-on {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.glow-on:hover, .glow-on:focus {
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    animation: pulseB 3s infinite;
+}
+
+@keyframes pulseB {
+    0% {
+        color: rgba(255,255,255,0.5);
+
+    }
+    50% {
+        color: rgba(255,255,255,1);
+    }
+    100% {
+        color: rgba(255,255,255,0.5);
+    }
+
+}
+
+#redeem-submit input, #gt-redeem-submit input {
+    min-width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}
+#redeem-submit, #gt-redeem-submit {
+    display: none;
+}
+
+#tog-step2 {
+    display: none;
+}
+
+#tog-buy input {
+    min-width: 120px;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

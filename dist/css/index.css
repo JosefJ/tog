@@ -1,0 +1,247 @@
+#ibo {
+    background-image: url('../images/bg.jpg');
+    min-height: 100%;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.bg-primary a, .bg-primary a:hover {
+    color: white;
+}
+.qr {
+    margin: 15px 0px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 22px;
+    border: 1px solid white;
+}
+
+#goals li{
+    text-align: left;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+#infoTab {
+    margin-top: 60px;
+}
+
+#infoTab th {
+    text-align: center;
+}
+
+#priceTab tr > th {
+    text-align: center;
+}
+
+#infoTab td:nth-child(1){
+    text-align: left;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#infoTab td:nth-child(2){
+    text-align: right;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+#infoTab tr:nth-child(1) > td{
+    border-top: none;
+}
+
+#infoTab tr:nth-child(3){
+    border-top: 2px solid white;
+}
+
+.clock {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border: 2px solid white;
+    border-radius: 22px;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.clock span {
+    font-size: 36px;
+}
+#esLink {
+    color: #dba717;
+}
+
+#esLine {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#expired {
+    font-size: 60px;
+}
+
+/*.row a {*/
+    /*color: #bd4125;*/
+/*}*/
+
+/*.row a:hover {*/
+    /*color: #bd4125 !important;*/
+/*}*/
+
+.navbar-default.affix .navbar-header .navbar-brand {
+    color: #bd4125;
+}
+
+#gt{
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.glow-on {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.glow-on:hover, .glow-on:focus {
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    animation: pulseB 3s infinite;
+}
+
+@keyframes pulseB {
+    0% {
+        color: rgba(255,255,255,0.5);
+
+    }
+    50% {
+        color: rgba(255,255,255,1);
+    }
+    100% {
+        color: rgba(255,255,255,0.5);
+    }
+
+}
+
+#redeem-submit input, #gt-redeem-submit input {
+    min-width: 270px;
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+    padding-right: 10px;
+}
+#redeem-submit, #gt-redeem-submit {
+    display: none;
+}
+
+#tog-step2 {
+    display: none;
+}
+
+#tog-buy input {
+    min-width: 120px;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tog-error {
+    display: none;
+}
+
+#about p, #about a {
+    margin-bottom: 0px;
+    color: white;
+}
+
+#intro p, #tog-intro p, #how-redeem p {
+    margin-bottom: 0px;
+}
+.goals {
+    margin: 25px;
+    counter-reset: step;
+}
+
+.goal, .nogoal, .feeling {
+    border-left: 7px solid #bd4125;
+    margin-left: 25px;
+    padding-left: 3px;
+    padding-top: 0;
+
+    text-align: left;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    list-style-type:none
+}
+
+.goal:before {
+
+    counter-increment: step;
+    content: counter(step);
+
+    color: white;
+    border: 1px solid #bd4125;
+    background-color: #bd4125;
+
+    border-radius: 50%;
+
+    margin-left: -32px;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 48px;
+}
+
+.nogoal:before, .feeling:before {
+    content: "\f000";
+    font-family: FontAwesome;
+
+    color: white;
+    border: 1px solid #bd4125;
+    background-color: #bd4125;
+
+    border-radius: 50%;
+
+    margin-left: -32px;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+
+.goal div, .nogoal div, .feeling div {
+    margin: -3em auto 0px 4em;
+}
+
+.feeling {
+    border-color: white;
+}
+
+.feeling:before {
+    content: "\f004";
+    font-family: FontAwesome;
+}
+
+#device-msg {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    #btn-menu, #tog-buy, #tog-step2 {
+        display: none;
+    }
+    #device-msg {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,147 @@
+.bg-custom {
+    width: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url('../images/header.jpg');
+    color: white;
+}
+
+#crossroads{
+    min-height: 100%;
+}
+
+.interface {
+    border: 5px solid white;
+    border-radius: 22px;
+    padding: 15px;
+    text-align: left;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    /*opacity: 0.5;*/
+    /*filter: alpha(opacity=50); !* For IE8 and earlier *!*/
+}
+
+/*.interface:hover, .interface:focus {*/
+    /*border: 5px solid rgba(255, 255, 255, 1);*/
+/*}*/
+
+.inputBundle input{
+    display: inline-block;
+    width: 79%;
+    margin-bottom: 10px;
+}
+
+#constants {
+    margin: 15px 0px;
+}
+
+.inputBundle {
+    margin-bottom: 15px;
+}
+
+.service {
+    display: inline-block;
+    min-width: 200px;
+    min-height: 200px;
+    border: 5px solid white;
+    border-radius: 22px;
+    margin: 30px;
+    line-height: 200px;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    color: white;
+}
+
+.service:hover, .service:focus {
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(255,255,255,0.1);
+
+    }
+    50% {
+        background-color: rgba(255,255,255,0.5);
+        font-size: 104%;
+    }
+    100% {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+}
+
+/*.step {*/
+    /*opacity: 0.5;*/
+/*}*/
+
+/*.step:hover, .step:focus {*/
+    /*opacity: 1;*/
+    /*filter: alpha(opacity=100); !* For IE8 and earlier *!*/
+/*}*/
+
+.UI-menuDD {
+    background-color: #e7e7e7;
+    border-radius: 0px;
+    min-width: 118px;
+    border: none;
+    padding: 0px;
+}
+
+.UI-menuDD li {
+    height: 50px;
+    border-top: 1px solid black;
+}
+
+.UI-menuDD li > a {
+    line-height: 50px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.UI-input {
+    border: 2px solid white;
+    border-radius: 22px;
+    color: black;
+    background: white;
+    margin: 5px 0px;
+    height: 40px;
+    min-width: 300px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer {
+    background-color: #535050;
+    color: white;
+    min-height: 60px;
+    padding: 15px;
+    line-height: 30px;
+}
+
+#crossroads a:focus, #crossroads a:hover {
+    text-decoration: none;
+}
+
+.footer a {
+    color: white;
+}
+
+.alert-info {
+    margin-bottom:0;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index:9999;
+    border-radius:0px;
+    display: none;
+}
